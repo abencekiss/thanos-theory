@@ -117,7 +117,7 @@
         animation: greenStone 30s linear infinite;
 
         &:hover {
-          filter: drop-shadow(0 0 20px #08ee00);
+          filter: drop-shadow(0 0 20px $stone-green);
 
           & + .infinity-stones__stones__text {
             opacity: 1;
@@ -131,7 +131,7 @@
         animation: blueStone 30s linear infinite;
 
         &:hover {
-          filter: drop-shadow(0 0 20px #0099ff);
+          filter: drop-shadow(0 0 20px $stone-blue);
 
           & + .infinity-stones__stones__text {
             opacity: 1;
@@ -145,7 +145,7 @@
         animation: purpleStone 30s linear infinite;
 
         &:hover {
-          filter: drop-shadow(0 0 20px #d600d6);
+          filter: drop-shadow(0 0 20px $stone-purple);
 
           & + .infinity-stones__stones__text {
             opacity: 1;
@@ -159,7 +159,7 @@
         animation: orangeStone 30s linear infinite;
 
         &:hover {
-          filter: drop-shadow(0 0 20px #ec8600);
+          filter: drop-shadow(0 0 20px $stone-orange);
 
           & + .infinity-stones__stones__text {
             opacity: 1;
@@ -173,7 +173,7 @@
         animation: yellowStone 30s linear infinite;
 
         &:hover {
-          filter: drop-shadow(0 0 20px #ecdd00);
+          filter: drop-shadow(0 0 20px $stone-yellow);
 
           & + .infinity-stones__stones__text {
             opacity: 1;
@@ -187,7 +187,7 @@
         animation: redStone 30s linear infinite;
 
         &:hover {
-          filter: drop-shadow(0 0 20px #ff0000);
+          filter: drop-shadow(0 0 20px $stone-red);
 
           & + .infinity-stones__stones__text {
             opacity: 1;
@@ -333,6 +333,37 @@ footer {
       height: 30px;
       width: auto;
       margin: 0 10px;
+    }
+
+    &__stone {
+      animation-fill-mode: forwards;
+      transition: filter 0.2s ease-in-out;
+      will-change: transform;
+
+      &--blue {
+        animation: footerStone 10s linear infinite;
+      }
+
+      &--green {
+        animation: footerStoneReverse 10s linear infinite;
+      }
+
+      &--red {
+        animation: footerStone 10s linear infinite;
+      }
+
+      &--yellow {
+        animation: footerStoneReverse 10s linear infinite;
+      }
+
+      &--purple {
+        animation: footerStone 10s linear infinite;
+      }
+
+      &--orange {
+        animation: footerStoneReverse 10s linear infinite;
+      }
+
     }
   }
 }

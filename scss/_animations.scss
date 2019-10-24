@@ -69,3 +69,21 @@
     transform: translateY(25%) rotate(-360deg); 
   }
 }
+
+@keyframes footerStone {
+  0% { 
+    transform: rotate(0);
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+
+@keyframes footerStoneReverse {
+  0% { 
+    transform: rotate(0);
+  }
+  100% { 
+    transform: rotate(-360deg); 
+  }
+}

@@ -1,0 +1,71 @@
+@keyframes spinStones {
+  0% { 
+    transform: translateX(-50%) rotate(0);
+  }
+  100% { 
+    transform: translateX(-50%) rotate(360deg); 
+  }
+}
+
+@keyframes spinText {
+  0% { 
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% { 
+    transform: translate(-50%, -50%) rotate(-360deg); 
+  }
+}
+
+@keyframes greenStone {
+  0% { 
+    transform: translateX(-50%) rotate(0);
+  }
+  100% { 
+    transform: translateX(-50%) rotate(-360deg); 
+  }
+}
+
+@keyframes blueStone {
+  0% { 
+    transform: translateY(-25%) rotate(0);
+  }
+  100% { 
+    transform: translateY(-25%) rotate(360deg); 
+  }
+}
+
+@keyframes purpleStone {
+  0% { 
+    transform: translateY(25%) rotate(0);
+  }
+  100% { 
+    transform: translateY(25%) rotate(-360deg); 
+  }
+}
+
+@keyframes orangeStone {
+  0% { 
+    transform: translateX(-50%) rotate(0);
+  }
+  100% { 
+    transform: translateX(-50%) rotate(360deg); 
+  }
+}
+
+@keyframes yellowStone {
+  0% { 
+    transform: translateY(-25%) rotate(0);
+  }
+  100% { 
+    transform: translateY(-25%) rotate(360deg); 
+  }
+}
+
+@keyframes redStone {
+  0% { 
+    transform: translateY(25%) rotate(0);
+  }
+  100% { 
+    transform: translateY(25%) rotate(-360deg); 
+  }
+}

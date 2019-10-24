@@ -1,0 +1,338 @@
+.header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  /*background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 40%), url('#{$assetsPath}/header-background.jpg');
+  -webkit-mask-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 15%, black 30%);*/
+  //background: url('#{$assetsPath}/header-background.jpg');
+  //background-repeat: no-repeat;
+  //z-index: 10;
+
+  & #parallax-scene {
+    position: relative;
+    top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .header-background {
+    width: 2100px;
+  }
+
+  & .header-content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 100;
+
+    &__theory {
+      filter: drop-shadow(-10px 10px 10px rgba(0,0,0,0.4));
+    }
+
+    &__text {
+      position: relative;
+      width: 590px;
+      margin-top: 30px;
+      filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 1));
+      @include font($font, 2rem, 200, null, null, null, null, white);
+
+      &::before, &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-repeat: no-repeat;
+      }
+
+      &::before {
+        left: -20px;
+        bottom: -10px;
+        background-image: url('#{$assetsPath}/quote-left.png');
+      }
+
+      &::after {
+        right: -15px;
+        top: -10px;
+        background-image: url('#{$assetsPath}/quote-right.png');
+      }
+    }
+
+  }
+
+  &__thanos {
+    position: relative;
+    margin-top: 10px;
+    z-index: 100;
+    filter: drop-shadow(-15px 15px 10px rgba(0,0,0,0.4));
+  }
+}
+
+.infinity-stones {
+  height: 200vh;
+  width: 100%;
+  //background-image: url('#{$assetsPath}/infinity-stones-background.jpg');
+  background: url('#{$assetsPath}/infinity-stones-background.png');
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+
+  &__content {
+    position: relative;
+    margin-top: 100vh;
+  }
+
+  &__stones {
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    animation: spinStones 120s linear infinite;
+    animation-fill-mode: forwards;
+    will-change: transform;
+
+    &__stone {
+      position: absolute;
+      display: block;
+      animation-fill-mode: forwards;
+      transition: filter 0.2s ease-in-out;
+      will-change: transform;
+
+      &--green {
+        left: 50%;
+        animation: greenStone 30s linear infinite;
+
+        &:hover {
+          filter: drop-shadow(0 0 20px #08ee00);
+
+          & + .infinity-stones__stones__text {
+            opacity: 1;
+          }
+        }
+      }
+
+      &--blue {
+        right: 0;
+        top: 25%;
+        animation: blueStone 30s linear infinite;
+
+        &:hover {
+          filter: drop-shadow(0 0 20px #0099ff);
+
+          & + .infinity-stones__stones__text {
+            opacity: 1;
+          }
+        }
+      }
+
+      &--purple {
+        right: 0;
+        bottom: 25%;
+        animation: purpleStone 30s linear infinite;
+
+        &:hover {
+          filter: drop-shadow(0 0 20px #d600d6);
+
+          & + .infinity-stones__stones__text {
+            opacity: 1;
+          }
+        }
+      }
+
+      &--orange {
+        bottom: 0;
+        left: 50%;
+        animation: orangeStone 30s linear infinite;
+
+        &:hover {
+          filter: drop-shadow(0 0 20px #ec8600);
+
+          & + .infinity-stones__stones__text {
+            opacity: 1;
+          }
+        }
+      }
+
+      &--yellow {
+        left: 0;
+        top: 25%;
+        animation: yellowStone 30s linear infinite;
+
+        &:hover {
+          filter: drop-shadow(0 0 20px #ecdd00);
+
+          & + .infinity-stones__stones__text {
+            opacity: 1;
+          }
+        }
+      }
+
+      &--red {
+        left: 0;
+        bottom: 25%;
+        animation: redStone 30s linear infinite;
+
+        &:hover {
+          filter: drop-shadow(0 0 20px #ff0000);
+
+          & + .infinity-stones__stones__text {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &__text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      animation: spinText 120s linear infinite;
+      transition: opacity 0.2s ease-in-out;
+      animation-fill-mode: forwards;
+      will-change: transform;
+
+      &__title {
+        
+      }
+
+      &__content {
+        @include font($font, 2rem, 400, null, null, null, center, white);
+      }
+
+    }
+  }
+}
+
+.infinity-gauntlet {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url('#{$assetsPath}/gauntlet-background.jpg');
+  margin-top: 94vh;
+
+  &__gauntlet {
+    position: absolute;
+    left: 10%;
+    filter: drop-shadow(-20px 10px 10px rgba(0,0,0,0.4));
+  }
+
+  &__description {
+    position: absolute;
+    left: 65%;
+    width: 700px;
+    margin-top: 400px;
+    transform: translateX(-50%);
+    @include font($font, 3rem, 400, null, null, null, null, white);
+  }
+}
+
+.mission {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url('#{$assetsPath}/mission-background.jpg');
+
+  &__thanos {
+    display: block;
+    margin: 0 30px 0 auto;
+    height: 90%;
+    filter: drop-shadow(30px 15px 40px rgba(50,100,200,0.4));
+  }
+
+  &__content {
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+
+    &__title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__icon {
+        width: 175px;
+        margin-right: 20px;
+      }
+
+      &__arrow {
+        width: 30px;
+        margin-right: 20px;
+      }
+
+      &__text {
+        @include font($font, 3rem, 400, null, null, null, null, white);
+      }
+    }
+  }
+
+  &__paragraph {
+    margin-top: 30px;
+    @include font($font, 2rem, 400, null, null, null, null, white);
+  }
+}
+
+.conclusion {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url('#{$assetsPath}/conclusion-background.jpg');
+  -webkit-mask-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) -5%, black 10%);
+
+  &__description {
+    margin-top: 90px;
+    @include font($font, 2rem, 400, null, null, null, center, white);
+  }
+
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+  background: url('#{$assetsPath}/infinity-stones-background.png');
+  background-position: 0px 250px;
+
+  & img {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    opacity: 0.2;
+  }
+
+  & p {
+    margin: 0;
+    @include font($font, 2rem, 700, null, null, null, center, #505050);
+  }
+
+  & .stones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    & img {
+      height: 30px;
+      width: auto;
+      margin: 0 10px;
+    }
+  }
+}

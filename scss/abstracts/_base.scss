@@ -1,0 +1,50 @@
+html {
+  font-size: 62.5% !important;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $font;
+  color: $color-font;
+  background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6, p, label, input {
+  margin: 0;
+}
+
+.container-fluid {
+  max-width: 1920px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e8e8e8; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-primary;
+}
+
+@include media-breakpoint-between(lg, xl) {
+  html {
+    font-size: 62.5% !important; // 10px
+  }
+}
+
+@include media-breakpoint-only(md) {
+  html {
+    font-size: 56.25% !important; // 9px
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  html {
+    font-size: 50% !important; // 8px
+  }
+}

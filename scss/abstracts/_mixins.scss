@@ -1,0 +1,208 @@
+// Set specific Font styling
+@mixin font
+(
+  $family: null,
+  $size: null,
+  $weight: null,
+  $spacing: null,
+  $line-height: null,
+  $transform: null,
+  $align: null,
+  $color: null
+) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $spacing;
+  line-height: $line-height;
+  text-transform: $transform;
+  text-align: $align;
+  color: $color;
+}
+
+@mixin fullhd-up {
+  @media screen and (min-width: 1921px) {
+    @content;
+  }
+}
+
+// Responsive Breakpoints - Down
+@mixin size-1800-down {
+  @media screen and (max-width: 1800px) {
+    @content;
+  }
+}
+
+@mixin size-1750-down {
+  @media screen and (max-width: 1750px) {
+    @content;
+  }
+}
+
+@mixin size-1700-down {
+  @media screen and (max-width: 1700px) {
+    @content;
+  }
+}
+
+@mixin size-1650-down {
+  @media screen and (max-width: 1650px) {
+    @content;
+  }
+}
+
+@mixin size-1600-down {
+  @media screen and (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin size-1550-down {
+  @media screen and (max-width: 1550px) {
+    @content;
+  }
+}
+
+@mixin size-1500-down {
+  @media screen and (max-width: 1500px) {
+    @content;
+  }
+}
+
+@mixin size-1450-down {
+  @media screen and (max-width: 1450px) {
+    @content;
+  }
+}
+
+@mixin size-1400-down {
+  @media screen and (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin size-1350-down {
+  @media screen and (max-width: 1350px) {
+    @content;
+  }
+}
+
+@mixin size-1300-down {
+  @media screen and (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin size-1250-down {
+  @media screen and (max-width: 1250px) {
+    @content;
+  }
+}
+
+@mixin size-1200-down {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin size-1150-down {
+  @media screen and (max-width: 1150px) {
+    @content;
+  }
+}
+
+@mixin size-1100-down {
+  @media screen and (max-width: 1100px) {
+    @content;
+  }
+}
+
+@mixin size-1050-down {
+  @media screen and (max-width: 1050px) {
+    @content;
+  }
+}
+
+@mixin size-1000-down {
+  @media screen and (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin size-950-down {
+  @media screen and (max-width: 950px) {
+    @content;
+  }
+}
+
+@mixin size-900-down {
+  @media screen and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin size-850-down {
+  @media screen and (max-width: 850px) {
+    @content;
+  }
+}
+
+@mixin size-800-down {
+  @media screen and (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin size-750-down {
+  @media screen and (max-width: 750px) {
+    @content;
+  }
+}
+
+@mixin size-700-down {
+  @media screen and (max-width: 700px) {
+    @content;
+  }
+}
+
+@mixin size-650-down {
+  @media screen and (max-width: 650px) {
+    @content;
+  }
+}
+
+@mixin size-600-down {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin size-550-down {
+  @media screen and (max-width: 550px) {
+    @content;
+  }
+}
+
+@mixin size-500-down {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin size-450-down {
+  @media screen and (max-width: 450px) {
+    @content;
+  }
+}
+
+@mixin size-400-down {
+  @media screen and (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin size-350-down {
+  @media screen and (max-width: 350px) {
+    @content;
+  }
+}

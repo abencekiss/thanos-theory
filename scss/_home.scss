@@ -1,3 +1,11 @@
+.header, .infinity-gauntlet, .mission, .conclusion {
+  max-height: 1080px;
+}
+
+.infinity-stones {
+  max-height: 2160px;
+}
+
 .header {
   position: relative;
   height: 100vh;
@@ -93,6 +101,10 @@
   &__content {
     position: relative;
     margin-top: 100vh;
+
+    @include fullhd-up {
+      margin-top: 1080px;
+    }
   }
 
   &__stones {
@@ -225,6 +237,10 @@
   background-image: url('#{$assetsPath}/gauntlet-background.jpg');
   margin-top: 94vh;
 
+  @include fullhd-up {
+    margin-top: 1015px;
+  }
+
   &__gauntlet {
     position: absolute;
     left: 10%;
@@ -314,7 +330,7 @@ footer {
   & img {
     display: block;
     width: 200px;
-    margin: 20px auto;
+    margin-bottom: 20px;
     opacity: 0.2;
   }
 

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Thanos Elmélete</title>
+  <title>Szabadfogású Számítógép Verseny 2019 - Thanos Elmélete</title>
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400&display=swap&subset=latin-ext" rel="stylesheet">
@@ -27,7 +27,7 @@
                   <img class="header__title__theory" src="./assets/thanos-theory.png">
                 </div>
                 <div data-aos="fade-left" data-aos-duration="2000" data-delay="1000">
-                  <h2 class="header__title__text">A legnehezebb döntésekhez a legerősebb akarat szükséges.</h2>
+                  <h2 class="header__title__text">Ha az élet szabadon burjánozhat, akkor egyszer elsorvad...</h2>
                 </div>
               </div>
             </div>
@@ -42,55 +42,69 @@
     </header>
   
     <section class="infinity-stones">
+      <div id="stone-blue-effect" class="infinity-stones__effect infinity-stones__effect--blue"></div>
+      <div id="stone-green-effect" class="infinity-stones__effect infinity-stones__effect--green"></div>
+      <div id="stone-red-effect" class="infinity-stones__effect infinity-stones__effect--red"></div>
+      <div id="stone-yellow-effect" class="infinity-stones__effect infinity-stones__effect--yellow"></div>
+      <div id="stone-purple-effect" class="infinity-stones__effect infinity-stones__effect--purple"></div>
+      <div id="stone-orange-effect" class="infinity-stones__effect infinity-stones__effect--orange"></div>
+
       <div class="infinity-stones__content">
         <div data-aos="fade-down" data-aos-duration="1000">
           <h2 class="title">Végtelen kövek</h2>
         </div>
         <div class="infinity-stones__stones">
-          <img src="./assets/stone-blue.png" class="infinity-stones__stones__stone infinity-stones__stones__stone--blue">
+          <div class="infinity-stones__stones__choose-container" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="200">
+            <p class="infinity-stones__stones__choose">Válassz követ!</p>
+          </div>
+          <img src="./assets/stone-blue.png" id="stone-blue" class="infinity-stones__stones__stone infinity-stones__stones__stone--blue">
           <div class="infinity-stones__stones__text">
             <h3 class="infinity-stones__stones__text__title stone-title">Tér Kő</h3>
             <p class="infinity-stones__stones__text__content">A birtokos képes a dimenziók között utazni, bármilyen tárgyat vagy személyt mozgatni a tér manipulálásával.</p>
           </div>
-          <img src="./assets/stone-green.png" class="infinity-stones__stones__stone infinity-stones__stones__stone--green">
+          <img src="./assets/stone-green.png" id="stone-green" class="infinity-stones__stones__stone infinity-stones__stones__stone--green">
           <div class="infinity-stones__stones__text">
             <h3 class="infinity-stones__stones__text__title stone-title">Idő Kő</h3>
             <p class="infinity-stones__stones__text__content">Teljhatalmat ad a múlt, jelen és jövő felett, birtokosa képes időutazásra, időhurkok létrehozására, más élőlények életkorának megváltoztatására.</p>
           </div>
-          <img src="./assets/stone-red.png" class="infinity-stones__stones__stone infinity-stones__stones__stone--red">
+          <img src="./assets/stone-red.png" id="stone-red" class="infinity-stones__stones__stone infinity-stones__stones__stone--red">
           <div class="infinity-stones__stones__text">
             <h3 class="infinity-stones__stones__text__title stone-title">Valóság Kő</h3>
             <p class="infinity-stones__stones__text__content">Képes megváltoztatni a valóságot, birtokosa átlépi a fizika és valóság törvényeit, alternatív valóságokat hozhat létre.</p>
           </div>
-          <img src="./assets/stone-yellow.png" class="infinity-stones__stones__stone infinity-stones__stones__stone--yellow">
+          <img src="./assets/stone-yellow.png" id="stone-yellow" class="infinity-stones__stones__stone infinity-stones__stones__stone--yellow">
           <div class="infinity-stones__stones__text">
             <h3 class="infinity-stones__stones__text__title stone-title">Elme Kő</h3>
             <p class="infinity-stones__stones__text__content">Felerősíti birtokosa mentális és pszichikai erejét, képes mások elméjét befolyásolni.</p>
           </div>
-          <img src="./assets/stone-purple.png" class="infinity-stones__stones__stone infinity-stones__stones__stone--purple">
+          <img src="./assets/stone-purple.png" id="stone-purple" class="infinity-stones__stones__stone infinity-stones__stones__stone--purple">
           <div class="infinity-stones__stones__text">
             <h3 class="infinity-stones__stones__text__title stone-title">Hatalom Kő</h3>
             <p class="infinity-stones__stones__text__content">Minden létező erő és energia manipulálását teszi lehetővé, felerősíti a többi kő erejét.</p>
           </div>
-          <img src="./assets/stone-orange.png" class="infinity-stones__stones__stone infinity-stones__stones__stone--orange">
+          <img src="./assets/stone-orange.png" id="stone-orange" class="infinity-stones__stones__stone infinity-stones__stones__stone--orange">
           <div class="infinity-stones__stones__text">
             <h3 class="infinity-stones__stones__text__title stone-title">Lélek Kő</h3>
-            <p class="infinity-stones__stones__text__content">Birtokosa képes ellopni, irányítani, manipulálni és megváltoztatni lelkeket, élőkét és holtakét egyaránt, képes mások képességének és erejének ellopására.</p>
+            <p class="infinity-stones__stones__text__content">Birtokosa képes ellopni, irányítani, manipulálni és megváltoztatni mások lelkét, képes mások képességének és erejének ellopására.</p>
           </div>
         </div>
       </div>
     </section>
   
     <section class="infinity-gauntlet">
+      <div id="snap-effect" class="infinity-gauntlet__snap"></div>
+
       <div data-aos="fade-up" data-aos-duration="1000">
         <h2 class="title pt-3">Végtelen kesztyű</h2>
       </div>
-      <div data-aos="fade-up" data-aos-duration="2000" data-aos-offset="800">
-        <img src="./assets/gauntlet.png" class="infinity-gauntlet__gauntlet">
+      <div data-aos="fade-up" data-aos-duration="2000" data-aos-offset="400">
+        <img class="infinity-gauntlet__gauntlet" src="./assets/gauntlet.png">
       </div>
-      <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="700">
+      <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="600">
+        <p class="infinity-gauntlet__population-title">A Föld lakóinak száma</p>
+        <p id="worldPopulation" class="infinity-gauntlet__population"></p>
         <p class="infinity-gauntlet__description">
-          Az univerzum leghatalmasabb eszközeinek egyike. Arra tervezték, hogy birtokosa mind a 6 Végtelen Kő erejét irányítani tudja, mivel a kövek ereje hordozó nélkül önmagában képes elpusztítani az univerzum bármely élőlényét.
+          Az univerzum leghatalmasabb eszközeinek egyike. Arra tervezték, hogy birtokosa az összes Végtelen Kő erejét egyszerre vagy kombinálva tudja irányítani, mivel a kövek ereje megfelelő hordozó nélkül képes elpusztítani birtokosát.
         </p>
       </div>
     </section>
@@ -99,7 +113,7 @@
       <div data-aos="fade-up" data-aos-duration="1000">
         <h2 class="title pt-6">Thanos küldetése</h2>
       </div>
-      <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="700">
+      <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="300">
         <img class="mission__thanos" src="./assets/population-thanos.png">
       </div>
       <div class="mission__content">
@@ -111,13 +125,13 @@
           </div>
         </div>
         <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="0">
-          <p class="mission__paragraph">Thanos meg volt győződve arról, hogy az univerzum erőforrási végesek és ez csak a népirtással tartható kordában.</p>
+          <p class="mission__paragraph">Thanos meg volt győződve arról, hogy az univerzum erőforrási végesek és ez csak a népirtással kontrollálható.</p>
         </div>
         <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="0">
           <p class="mission__paragraph">Eleinte bolygóról bolygóra járt és írtotta ki az ottani élőlények felét, hogy a másik fele bőségben éljen egész élete végéig.</p>
         </div>
         <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="0">
-          <p class="mission__paragraph">A kövek megszerzésével a célja annyi volt, hogy univerzum szinten felezze a népeségget mindössze egyetlen csettintéssel.</p>
+          <p class="mission__paragraph">A kövek megszerzésével a célja annyi volt, hogy ezt univerzum szinten vihesse véghez mindössze egyetlen csettintéssel.</p>
         </div>
       </div>
     </section>
@@ -130,16 +144,16 @@
         <div class="row">
           <div class="col-12">
             <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="150">
-              <p class="conclusion__description">Ez az elmélet a Marvel univerzumán kívül is többször felmerült, hogy a népességnövekedést valamilyen formában kordában kell tartani, különben az emberiség kihalásához vezet. Sokunk elsőre talán egyet is értene ezzel, azonban a világunk nem így működik, idővel be is igazolódott, hogy ez az elmélet nem csak teljes mértékben embertelen és gonosz, hanem téves is.</p>
+              <p class="conclusion__description">Ez az elmélet a Marvel univerzumán kívül is többször felmerült valós problémaként, hogy a népességnövekedést valamilyen szinten kordában kell tartani, különben az emberiség kihalásához fog vezetni. Sokunk elsőre talán egyet is értene ezzel, azonban világunk működése ennél összetettebb, idővel be is igazolódott, hogy ez az elmélet nem csak teljes mértékben embertelen és gonosz, hanem téves is.</p>
             </div>
             <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="150">
-              <p class="conclusion__description">Az emberek életminősége ahogy telik az idő folyamatosan javul, a nyersanyagok sokkal olcsóbban elérhetőek ahogyan az élelmiszer is mindamellett, hogy bolygónk lakossága folyamatosan növekszik, akkor mégis hogyan lehetséges ez?</p>
+              <p class="conclusion__description">Az emberek életminősége ahogy telik az idő folyamatosan javul, a nyersanyagok és élelmiszerek sokkal olcsóbban érhetőek el úgy, hogy bolygónk lakossága folyamatosan növekszik, akkor ez mégis hogyan lehetséges?</p>
             </div>
             <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="150">
-              <p class="conclusion__description">Sokunk elsőre gondolná, hogy minél többen vagyunk, annál gyorsabb tempóban "emésztjük fel" bolygónkat, azonban a több ember nem csak több éhes szájat jelent, hanem több elmét is, amik ezen problémák megoldására hivatottak, innovációt hoznak világunkba és ezáltal egy élhetőbbé hellyé válik.</p>
+              <p class="conclusion__description">Sokunk elsőre gondolná, hogy minél többen vagyunk, annál gyorsabb tempóban "emésztjük fel" bolygónkat, azonban a több ember nem csak több éhes szájat jelent, hanem több gondolkodó/alkotó elmét is, amik ezen problémák megoldására hivatottak, innovációt hoznak világunkba és ezáltal egy élhetőbbé hellyé válik.</p>
             </div>
             <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="150">
-              <p class="conclusion__description">Az emberi élet célja az, hogy értéket teremtsünk világunkban és hozzájáruljunk ahhoz, hogy jobb hellyé tegyük azt embertársaink számára...</p>
+              <p class="conclusion__description">Az emberi élet célja az, hogy értéket teremtsünk világunkban és hozzájáruljunk ahhoz, hogy jobb hellyé tegyük azt embertársaink számára.</p>
             </div>
           </div>
         </div>
@@ -150,20 +164,20 @@
       <img src="./assets/marvel-logo.png">
       <p>Minden jog fenntartva @ 2019</p>
       <div class="stones">
-        <img class="stones__stone stones__stone--green" src="assets/stone-green.png">
-        <img class="stones__stone stones__stone--blue" src="assets/stone-blue.png">
-        <img class="stones__stone stones__stone--purple" src="assets/stone-purple.png">
-        <img class="stones__stone stones__stone--orange" src="assets/stone-orange.png">
-        <img class="stones__stone stones__stone--red" src="assets/stone-red.png">
-        <img class="stones__stone stones__stone--yellow" src="assets/stone-yellow.png">
+        <img class="stones__stone stones__stone--green" src="./assets/stone-green.png">
+        <img class="stones__stone stones__stone--blue" src="./assets/stone-blue.png">
+        <img class="stones__stone stones__stone--purple" src="./assets/stone-purple.png">
+        <img class="stones__stone stones__stone--orange" src="./assets/stone-orange.png">
+        <img class="stones__stone stones__stone--red" src="./assets/stone-red.png">
+        <img class="stones__stone stones__stone--yellow" src="./assets/stone-yellow.png">
       </div>
     </footer>
-  
-    <audio id="background-music" src="./assets/background-music.mp3" autoplay hidden></audio>
   </div>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="https://unpkg.com/parallax-js@3.1.0/dist/parallax.min.js"></script>
+  <script src="https://unpkg.com/countup.js@1.9.3/dist/countUp.min.js"></script>
+  <script src="https://unpkg.com/sweetalert2@8.18.6/dist/sweetalert2.all.min.js"></script>
   <script src="./main.js"></script>
 </body>
 </html>

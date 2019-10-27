@@ -52,7 +52,7 @@
 
     &__text {
       position: relative;
-      width: 590px;
+      width: 570px;
       margin-top: 30px;
       filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 1));
       @include font($font, 2rem, 200, null, null, null, null, white);
@@ -107,6 +107,43 @@
     }
   }
 
+  &__effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s cubic-bezier(0,.36,.59,.99), visibility 1s cubic-bezier(0,.36,.59,.99);
+    z-index: 100000000000;
+    
+    &--blue {
+      background-color: $stone-blue;
+    }
+
+    &--green {
+      background-color: $stone-green;
+    }
+
+    &--red {
+      background-color: $stone-red;
+    }
+
+    &--yellow {
+      background-color: $stone-yellow;
+    }
+
+    &--purple {
+      background-color: $stone-purple;
+    }
+
+    &--orange {
+      background-color: $stone-orange;
+    }
+
+  }
+
   &__stones {
     height: 700px;
     width: 700px;
@@ -116,6 +153,26 @@
     animation: spinStones 120s linear infinite;
     animation-fill-mode: forwards;
     will-change: transform;
+    
+    &__choose-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    &__choose {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300px;
+      opacity: 0.2;
+      transition: opacity 0.2s ease-in-out;
+      animation: spinText 120s linear infinite;
+      animation-fill-mode: forwards;
+      will-change: transform;
+
+      @include font($font, 3rem, 400, null, null, uppercase, center, white);
+    }
 
     &__stone {
       position: absolute;
@@ -123,6 +180,10 @@
       animation-fill-mode: forwards;
       transition: filter 0.2s ease-in-out;
       will-change: transform;
+
+      &:hover {
+        cursor: pointer;
+      }
 
       &--green {
         left: 50%;
@@ -241,10 +302,47 @@
     margin-top: 1015px;
   }
 
+  &__snap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s cubic-bezier(0,.36,.59,.99), visibility 1s cubic-bezier(0,.36,.59,.99);
+    z-index: 100000000000;
+    background-color: white;
+  }
+
   &__gauntlet {
     position: absolute;
     left: 10%;
+    transition: filter 0.2s ease-in-out;
     filter: drop-shadow(-20px 10px 10px rgba(0,0,0,0.4));
+
+    &:hover {
+      cursor: pointer;
+      filter: drop-shadow(0 0 50px rgba(124, 74, 33, 0.8));
+    }
+  }
+
+  &__population-title {
+    position: absolute;
+    left: 65%;
+    width: 700px;
+    margin-top: 250px;
+    transform: translateX(-50%);
+    @include font($font, 3rem, 400, null, null, null, null, white);
+  }
+
+  &__population {
+    position: absolute;
+    left: 65%;
+    width: 700px;
+    margin-top: 300px;
+    transform: translateX(-50%);
+    @include font($font, 3rem, 400, null, null, null, null, white);
   }
 
   &__description {
@@ -268,6 +366,12 @@
     margin: 0 30px 0 auto;
     height: 90%;
     filter: drop-shadow(30px 15px 40px rgba(50,100,200,0.4));
+    transition: filter 0.2s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      filter: drop-shadow(30px 15px 80px rgba(50,100,200,0.4));
+    }
   }
 
   &__content {
